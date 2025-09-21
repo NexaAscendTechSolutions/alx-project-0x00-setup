@@ -5,6 +5,7 @@ const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
+  styles = "",
 }) => {
   // map sizes to Tailwind classes
   const sizeClasses = {
@@ -15,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`bg-blue-500 text-white font-medium hover:bg-blue-600 transition ${sizeClasses[size]} ${shape}`}>
+      className={`bg-blue-500 text-white font-medium hover:bg-blue-600 transition ${sizeClasses[size]} ${shape} ${styles}`}>
       {title}
     </button>
   );

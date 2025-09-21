@@ -21,6 +21,8 @@ const Landing: React.FC = () => {
             size="large"
             shape="rounded-full"
           />
+          <Button title="Large Rounded-lg" size="large" shape="rounded-lg" />{" "}
+          {/* ✅ added */}
         </div>
       </div>
     </div>
