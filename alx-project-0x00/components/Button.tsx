@@ -7,15 +7,13 @@ const Button: React.FC<ButtonProps> = ({
   shape = "rounded-md",
   className,
 }) => {
-  // Size map
-  const sizeClasses: Record<typeof size, string> = {
+  const sizeClasses: Record<NonNullable<ButtonProps["size"]>, string> = {
     small: "px-2 py-1 text-sm",
     medium: "px-4 py-2 text-base",
     large: "px-6 py-3 text-lg",
   };
 
-  // Shape map
-  const shapeClasses: Record<typeof shape, string> = {
+  const shapeClasses: Record<NonNullable<ButtonProps["shape"]>, string> = {
     "rounded-sm": "rounded-sm",
     "rounded-md": "rounded-md",
     "rounded-full": "rounded-full",
