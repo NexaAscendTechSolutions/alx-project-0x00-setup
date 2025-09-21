@@ -3,8 +3,10 @@ export interface PillProps {
   title: string;
 }
 
-// For Button
+// Interface for Button component
 export interface ButtonProps {
   title: string;
-  styles?: string; // Optional Tailwind styles
+  size?: "small" | "medium" | "large";
+  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
+  className?: string; // extra styles if needed
 }

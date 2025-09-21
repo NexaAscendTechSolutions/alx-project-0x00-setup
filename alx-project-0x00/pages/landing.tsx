@@ -14,17 +14,12 @@ const Landing: React.FC = () => {
       <div className="mt-8 space-y-4">
         <h2 className="text-lg font-semibold">Button Variants</h2>
         <div className="flex gap-4 flex-wrap">
-          <Button
-            title="Small Rounded-sm"
-            styles="px-2 py-1 text-sm rounded-sm"
-          />
-          <Button
-            title="Medium Rounded-md"
-            styles="px-4 py-2 text-base rounded-md"
-          />
+          <Button title="Small Rounded-sm" size="small" shape="rounded-sm" />
+          <Button title="Medium Rounded-md" size="medium" shape="rounded-md" />
           <Button
             title="Large Rounded-full"
-            styles="px-6 py-3 text-lg rounded-full"
+            size="large"
+            shape="rounded-full"
           />
         </div>
       </div>
