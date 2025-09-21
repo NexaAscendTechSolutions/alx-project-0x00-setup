@@ -14,15 +14,30 @@ const Landing: React.FC = () => {
       <div className="mt-8 space-y-4">
         <h2 className="text-lg font-semibold">Button Variants</h2>
         <div className="flex gap-4 flex-wrap">
-          <Button title="Small Rounded-sm" size="small" shape="rounded-sm" />
-          <Button title="Medium Rounded-md" size="medium" shape="rounded-md" />
+          <Button
+            title="Small Rounded-sm"
+            size="small"
+            shape="rounded-sm"
+            styles=""
+          />
+          <Button
+            title="Medium Rounded-md"
+            size="medium"
+            shape="rounded-md"
+            styles=""
+          />
           <Button
             title="Large Rounded-full"
             size="large"
             shape="rounded-full"
+            styles="shadow-md"
           />
-          <Button title="Large Rounded-lg" size="large" shape="rounded-lg" />{" "}
-          {/* ✅ added */}
+          <Button
+            title="Large Rounded-lg"
+            size="large"
+            shape="rounded-lg"
+            styles="bg-green-500 hover:bg-green-600"
+          />
         </div>
       </div>
     </div>
